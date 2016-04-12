@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/edit_diary_layout">
+
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/diary_toolbar"
+
+            android:background="#EEEEEE"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        </android.support.v7.widget.Toolbar>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:background="#EEEEEE"
+        android:layout_gravity="center_horizontal">
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:id="@+id/edit_diary_title"
+            android:hint="标题"
+            android:singleLine="true"
+            android:layout_marginLeft="100dp"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/weather_layout"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="5dp">
+        <ImageView
+            android:id="@+id/weather_qintian"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="4dp"
+            android:src="@mipmap/daqintian"/>
+        <ImageView
+            android:id="@+id/weather_duoyun"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="4dp"
+            android:src="@mipmap/duoyun"/>
+        <ImageView
+            android:id="@+id/weather_yintian"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="4dp"
+            android:src="@mipmap/yintian"/>
+        <ImageView
+            android:id="@+id/weather_xiayu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="4dp"
+            android:src="@mipmap/xiayu"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edit_diary_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:hint="写点东西吧。。。"
+        android:background="@null"
+        android:padding="8dp"/>
+
+
+
+
+</LinearLayout>
